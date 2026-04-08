@@ -1,12 +1,12 @@
 export const T = {
     en: {
-        title: "Temperament & Character", subtitle: "Cloninger's TCI Assessment", qOf: (c, t) => `Question ${c} of ${t}`, complete: (p) => `${p}% complete`, back: "← Back", skip: "Skip →", results: "See Results →", retake: "Retake Test", yourProfile: "Your TCI Profile", profileSub: "Temperament & Character", temperament: "Temperament", tempDesc: "Heritable biases in automatic emotional responses", character: "Character", charDesc: "Developed through insight and learning over the lifespan", note: "Note:", noteText: "This is an informal self-assessment inspired by Cloninger's TCI model for educational purposes only. It is not a validated clinical instrument.", balanced: "Balanced between extremes", sd: "Strongly Disagree", d: "Disagree", n: "Neutral", a: "Agree", sa: "Strongly Agree",
+        title: "Temperament & Character", subtitle: "Cloninger's TCI Assessment", qOf: (c, t) => `Question ${c} of ${t}`, complete: (p) => `${p}% complete`, back: "← Back", skip: "Skip →", results: "See Results →", retake: "Retake Test", yourProfile: "Your TCI Profile", profileSub: "Temperament & Character", yourArchetype: "Your Archetype", temperament: "Temperament", tempDesc: "Heritable biases in automatic emotional responses", character: "Character", charDesc: "Developed through insight and learning over the lifespan", note: "Note:", noteText: "This is an informal self-assessment inspired by Cloninger's TCI model for educational purposes only. It is not a validated clinical instrument.", balanced: "Balanced between extremes", sd: "Strongly Disagree", d: "Disagree", n: "Neutral", a: "Agree", sa: "Strongly Agree",
     },
     ko: {
-        title: "기질 및 성격 검사", subtitle: "클로닝거 TCI 자가평가", qOf: (c, t) => `${t}문항 중 ${c}번`, complete: (p) => `${p}% 완료`, back: "← 이전", skip: "건너뛰기 →", results: "결과 보기 →", retake: "다시 검사하기", yourProfile: "나의 TCI 프로필", profileSub: "기질 및 성격 검사 결과", temperament: "기질 (Temperament)", tempDesc: "자동적 정서 반응에 대한 유전적 경향성", character: "성격 (Character)", charDesc: "통찰과 학습을 통해 발달하는 자기개념", note: "참고:", noteText: "본 검사는 클로닝거의 TCI 모델에 기반한 비공식 자기평가이며 교육 목적으로만 제공됩니다.", balanced: "양극단 사이의 균형 상태", sd: "매우 그렇지 않다", d: "그렇지 않다", n: "보통이다", a: "그렇다", sa: "매우 그렇다",
+        title: "기질 및 성격 검사", subtitle: "클로닝거 TCI 자가평가", qOf: (c, t) => `${t}문항 중 ${c}번`, complete: (p) => `${p}% 완료`, back: "← 이전", skip: "건너뛰기 →", results: "결과 보기 →", retake: "다시 검사하기", yourProfile: "나의 TCI 프로필", profileSub: "기질 및 성격 검사 결과", yourArchetype: "당신의 아키타입 (원형)", temperament: "기질 (Temperament)", tempDesc: "자동적 정서 반응에 대한 유전적 경향성", character: "성격 (Character)", charDesc: "통찰과 학습을 통해 발달하는 자기개념", note: "참고:", noteText: "본 검사는 클로닝거의 TCI 모델에 기반한 비공식 자기평가이며 교육 목적으로만 제공됩니다.", balanced: "양극단 사이의 균형 상태", sd: "매우 그렇지 않다", d: "그렇지 않다", n: "보통이다", a: "그렇다", sa: "매우 그렇다",
     },
     tr: {
-        title: "Mizaç ve Karakter", subtitle: "Cloninger'in TCI Değerlendirmesi", qOf: (c, t) => `Soru ${c} / ${t}`, complete: (p) => `%${p} tamamlandı`, back: "← Geri", skip: "Geç →", results: "Sonuçları Gör →", retake: "Testi Tekrar Çöz", yourProfile: "TCI Profiliniz", profileSub: "Mizaç ve Karakter", temperament: "Mizaç", tempDesc: "Otomatik duygusal tepkilerde kalıtsal eğilimler", character: "Karakter", charDesc: "Yaşam boyu içgörü ve öğrenme yoluyla gelişir", note: "Not:", noteText: "Bu, yalnızca eğitim amaçlı Cloninger'in TCI modelinden esinlenilmiş gayri resmi bir öz değerlendirmedir. Geçerliliği olan klinik bir araç değildir.", balanced: "Aşırılıklar arasında dengeli", sd: "Kesinlikle Katılmıyorum", d: "Katılmıyorum", n: "Tarafsız", a: "Katılıyorum", sa: "Kesinlikle Katılıyorum",
+        title: "Mizaç ve Karakter", subtitle: "Cloninger'in TCI Değerlendirmesi", qOf: (c, t) => `Soru ${c} / ${t}`, complete: (p) => `%${p} tamamlandı`, back: "← Geri", skip: "Geç →", results: "Sonuçları Gör →", retake: "Testi Tekrar Çöz", yourProfile: "TCI Profiliniz", profileSub: "Mizaç ve Karakter", yourArchetype: "Arketipiniz", temperament: "Mizaç", tempDesc: "Otomatik duygusal tepkilerde kalıtsal eğilimler", character: "Karakter", charDesc: "Yaşam boyu içgörü ve öğrenme yoluyla gelişir", note: "Not:", noteText: "Bu, yalnızca eğitim amaçlı Cloninger'in TCI modelinden esinlenilmiş gayri resmi bir öz değerlendirmedir. Geçerliliği olan klinik bir araç değildir.", balanced: "Aşırılıklar arasında dengeli", sd: "Kesinlikle Katılmıyorum", d: "Katılmıyorum", n: "Tarafsız", a: "Katılıyorum", sa: "Kesinlikle Katılıyorum",
     }
 };
 
@@ -18,6 +18,16 @@ export const DIMS = {
     SD: { en: "Self-Directedness", ko: "자율성", tr: "Kendi Kendini Yönetme", color: "#9B59B6" },
     CO: { en: "Cooperativeness", ko: "연대감", tr: "İşbirliği", color: "#1ABC9C" },
     ST: { en: "Self-Transcendence", ko: "자기초월", tr: "Kendini Aşma", color: "#E74C8B" },
+};
+
+export const ARCHETYPES = {
+    NS: { low: { en: "Preserver", ko: "보존자", tr: "Koruyucu" }, high: { en: "Explorer", ko: "탐험가", tr: "Kaşif" } },
+    HA: { low: { en: "Risk-taker", ko: "모험가", tr: "Risk Alan" }, high: { en: "Guardian", ko: "수호자", tr: "Muhafız" } },
+    RD: { low: { en: "Individualist", ko: "개인주의자", tr: "Bireyci" }, high: { en: "Empath", ko: "공감자", tr: "Empat" } },
+    PS: { low: { en: "Adapter", ko: "적응자", tr: "Uyumlu" }, high: { en: "Achiever", ko: "성취자", tr: "Başaran" } },
+    SD: { low: { en: "Responder", ko: "반응자", tr: "Tepkisel" }, high: { en: "Director", ko: "주도자", tr: "Yönlendirici" } },
+    CO: { low: { en: "Challenger", ko: "도전자", tr: "Meydan Okuyan" }, high: { en: "Harmonizer", ko: "조화자", tr: "Uzlaştırıcı" } },
+    ST: { low: { en: "Realist", ko: "현실주의자", tr: "Gerçekçi" }, high: { en: "Mystic", ko: "신비주의자", tr: "Mistik" } }
 };
 
 export const INTERP = {

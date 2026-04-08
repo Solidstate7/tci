@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-import { T, DIMS, INTERP, QS } from "./tciData";
+import { T, DIMS, INTERP, QS, ARCHETYPES } from "./tciData";
 
 function ScoreBar({ dim, pct, lang }) {
     const [expanded, setExpanded] = useState(false);
@@ -186,6 +186,30 @@ export default function TCITest() {
                     <div style={{ textAlign: "center", marginBottom: 28 }}>
                         <h1 style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontSize: 28, margin: 0 }}>{t.yourProfile}</h1>
                         <p style={{ fontSize: 12, color: "#888", marginTop: 6, textTransform: "uppercase", letterSpacing: 2 }}>{t.profileSub}</p>
+                    </div>
+
+                    <div style={{ background: "#fffefa", borderRadius: 16, padding: "28px 24px", boxShadow: "0 2px 24px rgba(0,0,0,0.06)", border: "1px solid #e5e0d8", marginBottom: 20 }}>
+                        <h2 style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontSize: 18, margin: "0 0 16px", color: "#555", textAlign: "center" }}>{t.yourArchetype}</h2>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
+                            {Object.keys(DIMS).map(dim => {
+                                const score = computeScores()[dim];
+                                const type = score >= 50 ? "high" : "low";
+                                const archetype = ARCHETYPES[dim][type][lang];
+                                return (
+                                    <div key={dim} style={{ 
+                                        padding: "6px 12px", 
+                                        borderRadius: 20, 
+                                        background: DIMS[dim].color + "15", 
+                                        color: DIMS[dim].color, 
+                                        fontSize: 12, 
+                                        fontWeight: 700, 
+                                        border: `1px solid ${DIMS[dim].color}30` 
+                                    }}>
+                                        {archetype}
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
 
                     <div style={{ background: "#fffefa", borderRadius: 16, padding: "28px 24px", boxShadow: "0 2px 24px rgba(0,0,0,0.06)", border: "1px solid #e5e0d8", marginBottom: 20 }}>
