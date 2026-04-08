@@ -59,18 +59,18 @@ const INTERP = {
             low: "Reflective, deliberate, stoic, frugal, orderly", 
             high: "Exploratory, impulsive, extravagant, quick-tempered, excitable",
             detail: {
-                low: "You tend to be thoughtful, strictly organized, and prefer established routines over unproven thrills.",
-                high: "You are driven by a need for exploring new things, enjoying excitement, risks, and acting spontaneously.",
-                balanced: "You navigate comfortably between seeking out novelty and sticking strictly to routine."
+                low: "From a clinical perspective, individuals scoring low in Novelty Seeking generally display heightened dopaminergic stability. They demonstrate strong behavioral inhibition in the face of novel stimuli, preferring systematic, structured, and predictable environments. Such individuals are deeply reflective, unhurried, and highly resistant to acting on impulse. While this provides excellent long-term frugality and stoic temperance, it may also manifest clinically as rigidity, resistance to necessary change, or an overly regimented approach to life that struggles with spontaneity.",
+                high: "Clinically, high Novelty Seeking is associated with lower basal dopaminergic activity, prompting frequent exploratory behavior to achieve stimulation. Such individuals are highly responsive to novel environments, often acting impulsively and seeking immediate exhilaration or reward. This trait provides a dynamic, enthusiastic, and socially engaging personality. However, extreme levels may correlate with clinical presentations of distractibility, financial extravagance, quick-tempered outbursts, and a vulnerability to substance or behavioral addictions due to an impaired capacity for behavioral inhibition.",
+                balanced: "A balanced Novelty Seeking score indicates an optimal modulation of dopaminergic responses. The individual can explore and adapt to novel stimuli with enthusiasm when appropriate, yet is capable of invoking necessary behavioral inhibition to maintain structured routines when required."
             }
         },
         ko: { 
             low: "신중하고, 절제하며, 질서를 중시하는 편", 
             high: "탐색적이고, 충동적이며, 쉽게 흥분하는 편",
             detail: {
-                low: "사려 깊고 체계적이며, 입증되지 않은 스릴보다는 확립된 일상을 선호합니다.",
-                high: "새로운 것을 탐색하려는 욕구가 강하며, 짜릿함과 위험을 즐기고 즉흥적으로 행동하는 경향이 있습니다.",
-                balanced: "새로움을 탐구하는 것과 일상적인 규칙을 지키는 것 사이에서 적절하게 균형을 유지합니다."
+                low: "임상적 관점에서 자극 추구(Novelty Seeking)가 낮은 개인은 일반적으로 도파민 시스템의 높은 안정성을 보입니다. 이들은 새로운 자극에 대한 행동 억제력이 강하며, 체계적이고 구조화된 환경을 선호합니다. 성향상 매우 신중하고 충동적인 행동에 강한 저항력을 보입니다. 이는 장기적인 안정성과 절제력 측면에서는 우수하나, 임상적으로는 심리적 경직성, 변화에 대한 저항, 또는 자발성이 부족한 강박적 일상으로 나타날 수 있습니다.",
+                high: "자극 추구 성향이 높은 경우, 보다 잦은 탐색 행동과 즉각적인 보상을 추구하는 뇌의 기저 활동 패턴을 가집니다. 새로운 환경에 빠르게 반응하며, 충동적으로 짜릿함을 찾는 경향이 있습니다. 이는 매우 역동적이고 열정적인 성격으로 발현되지만, 극단적인 경우 임상적으로 산만함, 무절제한 소비, 잦은 분노 표출, 그리고 행동 억제 저하로 인한 중독 취약성으로 이어질 수 있습니다.",
+                balanced: "균형 잡힌 자극 추구 점수는 자극에 대한 도파민 반응이 매우 적절히 조절되고 있음을 의미합니다. 상황에 맞춰 새로운 자극을 수용하고 즐길 수 있으면서도, 필요할 때는 충분한 행동 억제력을 발휘하여 안정적인 루트를 유지할 수 있습니다."
             }
         },
     },
@@ -79,18 +79,18 @@ const INTERP = {
             low: "Optimistic, bold, confident, outgoing, energetic", 
             high: "Cautious, tense, fearful, inhibited, easily fatigued",
             detail: {
-                low: "You are highly optimistic and bold, remaining deeply confident and energetic even in unfamiliar situations.",
-                high: "You tend to be cautious and anticipate potential problems, often feeling tense or worried about the future.",
-                balanced: "You are mindful of potential risks without being overly fearful, maintaining a healthy sense of caution."
+                low: "Clinically, low Harm Avoidance implies a reduced sensitivity in the brain's serotonergic punishment system. These individuals exhibit pronounced boldness, unflagging optimism, and a stark lack of anticipatory anxiety even in genuinely risky paradigms. While this equips them with vast energy and rapid recovery from stress, pathologically low levels may indicate an alarming lack of appropriate fear conditioning, leading to reckless endangerment, poor risk mitigation, and a failure to anticipate negative consequences.",
+                high: "High Harm Avoidance is characterized by an overactive behavioral inhibition system, closely tied to serotonergic function. The individual is hypersensitive to aversive stimuli and strongly disposed toward anticipatory anxiety, pessimistic forecasting, and rapid fatiguability due to chronic muscular and psychological tension. Clinically, this is heavily correlated with anxiety disorders, phobias, and avoidant personality traits, as the subject perpetually withdraws from unfamiliar or potentially threatening situations to preserve homeostasis.",
+                balanced: "A balanced Harm Avoidance score reflects a well-regulated serotonergic system. The individual demonstrates appropriate fear conditioning—capable of foreseeing realistic negative outcomes and acting cautiously, without allowing anticipatory anxiety to paralyze their decision-making or drain their energy."
             }
         },
         ko: { 
             low: "낙관적이고, 대담하며, 에너지가 넘치는 편", 
             high: "조심스럽고, 긴장이 많으며, 쉽게 지치는 편",
             detail: {
-                low: "매우 낙관적이고 대담하며, 낯선 상황에서도 깊은 자신감과 에너지를 유지합니다.",
-                high: "조심성이 많고 잠재적인 문제를 미리 예상하며, 미래에 대해 긴장하거나 걱정하는 경향이 있습니다.",
-                balanced: "지나치게 두려워하지 않으면서도 잠재적인 위험을 잘 인지하며, 건강한 경계심을 유지합니다."
+                low: "임상적으로 위험 회피(Harm Avoidance)가 낮은 개인은 뇌의 처벌 예측 시스템(세로토닌 관련)의 민감도가 낮습니다. 이들은 낯선 상황에서도 불안을 거의 느끼지 않으며 강력한 대담성과 낙관주의를 보입니다. 스트레스 상황에서 회피하지 않고 에너지를 유지하는 장점이 있으나, 병리적으로 낮을 경우 적절한 두려움 학습이 결여되어 무모한 위험 감수나 부정적 결과에 대한 대비 부족으로 이어질 수 있습니다.",
+                high: "위험 회피가 높은 개인은 혐오 자극에 매우 민감하며, 행동 억제 시스템이 과활성화되어 있습니다. 예기불안이 높고, 잠재적인 위험을 비관적으로 예측하며, 만성적인 신체적·심리적 긴장으로 인해 쉽게 피로해집니다. 임상적으로 이는 불안 장애, 공포증, 또는 회피적 성격 특성과 밀접한 관련이 있으며, 안전장치가 확보되지 않은 상황을 극도로 꺼리게 됩니다.",
+                balanced: "균형 잡힌 위험 회피 점수는 상황을 현실적으로 평가하는 안정적인 방어 기제를 보여줍니다. 잠재적 위험에 대비하고 조심스럽게 접근하면서도, 불필요한 예기불안에 압도되지 않고 적절히 대응할 수 있는 건강한 심리 상태를 뜻합니다."
             }
         },
     },
@@ -99,18 +99,18 @@ const INTERP = {
             low: "Independent, detached, cool, practical, self-contained", 
             high: "Sentimental, warm, attached, dependent, open",
             detail: {
-                low: "You are independent and practical, preferring to remain slightly detached rather than rely heavily on social approval.",
-                high: "You are highly sentimental and warm, valuing deep attachments and thriving on social connection and approval.",
-                balanced: "You enjoy connecting with others but maintain your independent streak when making your own decisions."
+                low: "Low Reward Dependence reflects a clinical profile of pronounced emotional detachment and autonomy from social reinforcement, generally associated with noradrenergic baseline variations. These individuals do not rely on interpersonal approval or emotional warmth to inform their decision-making, preferring staunch pragmatism. While highly independent, extreme low scoring borders on clinical schizoid or dismissive-avoidant traits, marked by an inability to form deep emotional attachments or demonstrate affective empathy.",
+                high: "Clinically, high Reward Dependence indicates a hypersensitivity to social cues and emotional reinforcement. These individuals are extremely attached, empathetic, and uniquely skilled at interpreting and responding to the affective states of others. However, in elevated pathological forms, this trait leads to intense vulnerability to social rejection, desperate people-pleasing behaviors, abandonment anxiety, and clinical codependency, as the individual's self-worth is inextricably linked to external validation.",
+                balanced: "A balanced Reward Dependence score presents an individual who values and nurtures deep emotional connections but retains functional autonomy. They can process sympathetic social cues effectively without allowing their sense of validity to be entirely dictated by the approval or presence of others."
             }
         },
         ko: { 
             low: "독립적이고, 냉정하며, 실용적인 편", 
             high: "정이 많고, 따뜻하며, 타인에게 의존하는 편",
             detail: {
-                low: "독립적이고 실용적이며, 타인의 인정에 크게 의존하기보다는 약간의 거리를 두는 것을 선호합니다.",
-                high: "매우 감성적이고 따뜻하며, 깊은 애착 관계를 소중히 여기고 사회적 유대감에서 큰 에너지를 얻습니다.",
-                balanced: "다른 사람들과 어울리는 것을 즐기면서도 스스로 결정을 내릴 때는 독립적인 태도를 유지합니다."
+                low: "낮은 사회적 민감성(Reward Dependence)은 사회적 보상이나 타인의 인정에 대한 의존도가 매우 낮음을 의미하며, 이는 노르에피네프린 시스템의 자율성과 관련이 깊습니다. 정서적으로 분리되어 있고 극도로 실용적인 결정을 내리지만, 지나치게 낮을 경우 임상적으로 분열성 성향이나 회피적 애착을 보일 수 있으며, 깊은 정서적 교감을 형성하거나 정서적 공감을 나누는 데 상당한 어려움을 겪을 수 있습니다.",
+                high: "사회적 민감성이 높은 경우, 사회적 신호와 타인의 정서적 보상에 매우 민감하게 반응합니다. 공감 능력이 뛰어나고 타인과 깊은 애착을 형성하지만, 임상적으로 이 수치가 지나치게 높으면 타인의 거절에 극도로 취약해지며, 유기 불안(버림받는 것에 대한 두려움)과 의존성 성격 특성을 보일 위험이 큽니다. 자신의 가치를 타인의 승인에서 찾으려 하는 경향이 짙어집니다.",
+                balanced: "균형 잡힌 사회적 민감성은 타인과의 깊은 정서적 연결을 가치 있게 여기면서도 스스로의 정서적 자율성을 잃지 않음을 의미합니다. 주변 사람들에게 공감하고 협력할 수 있지만, 타인의 인정 여부에 자신의 본질적 가치가 흔들리지 않는 건강한 상태입니다."
             }
         },
     },
@@ -119,18 +119,18 @@ const INTERP = {
             low: "Pragmatic, yielding, flexible, gives up easily", 
             high: "Determined, ambitious, overachieving, perseverant",
             detail: {
-                low: "You are pragmatic and flexible, preferring to adjust your plans rather than push through heavy resistance.",
-                high: "You are exceptionally determined and ambitious, continually striving to overachieve even when faced with obstacles.",
-                balanced: "You know when it's best to persevere through a challenge and when it's smarter to step back and be flexible."
+                low: "A clinically low Persistence score indicates a highly malleable threshold for frustration. Such individuals adapt rapidly by yielding to resistance rather than exhausting resources. Clinically, this extreme flexibility can masquerade as lethargy, distractibility, or an inability to sustain attention on long-term goals without immediate environmental rewards. It may co-occur with traits of acute underachievement relative to latent cognitive capability.",
+                high: "High Persistence denotes robust resilience in the face of intermittent reinforcement. The individual possesses a profound capacity to sustain protracted effort despite fatigue, frustration, or lack of immediate reward. Pathologically, this manifests as extreme perfectionism, obsessive-compulsive persistence, and workaholism. The clinical danger lies in an inability to pivot or abandon sunk costs, driving the individual to the point of severe physiological and psychological exhaustion.",
+                balanced: "An optimally balanced Persistence score illustrates the ability to sustain goal-directed behavior when the outcome justifies the effort, coupled with the critical clinical insight required to abandon futile endeavors and adapt flexibly to changing circumstances."
             }
         },
         ko: { 
             low: "유연하고 쉽게 포기하는 편", 
             high: "결단력 있고, 야심차며, 끈기 있는 편",
             detail: {
-                low: "실용적이고 유연하여, 강한 저항을 무릅쓰기보다는 계획을 수정하는 것을 더 선호합니다.",
-                high: "매우 결단력 있고 야심이 넘치며, 장애물에 부딪혀도 목표를 달성하기 위해 끊임없이 노력합니다.",
-                balanced: "어려움을 극복하며 인내해야 할 때와 유연하게 한 발 물러서야 할 때를 잘 구분합니다."
+                low: "인내력(Persistence)이 임상적으로 낮은 개인은 좌절에 대한 역치가 낮으며, 강한 저항 상황에서 빠르게 포기하고 노선을 수정합니다. 이러한 극단적인 유연성은 즉각적인 보상이 주어지지 않는 장기적 목표에서 집중력을 잃게 만들며, 임상적으로 무기력증이나 본인의 실제 잠재력보다 현저히 낮은 성취를 이루는 원인이 될 수 있습니다.",
+                high: "높은 인내력은 간헐적이거나 불확실한 보상에도 불구하고 노력을 지속하는 강력한 회복탄력성을 의미합니다. 피로와 좌절 속에서도 목표를 향해 나아갑니다. 그러나 이 수치가 병리적으로 높으면 완벽주의, 강박적인 몰두, 번아웃을 무시하는 워커홀릭 성향으로 나타나며, 성공 가능성이 없는 일에도 집착하다가 심리적/신체적 탈진을 겪게 될 위험이 큽니다.",
+                balanced: "균형 잡힌 인내력은 목표 달성을 위한 노력의 양을 합리적으로 조절하는 상태입니다. 필요한 일에는 끈기 있게 매달리지만, 한계에 부딪히거나 상황이 변하면 고집을 꺾고 유연하게 경로를 수정할 수 있는 임상적 판단력을 보유하고 있습니다."
             }
         },
     },
@@ -139,18 +139,18 @@ const INTERP = {
             low: "Blaming, aimless, reactive, fragile, unreliable", 
             high: "Purposeful, responsible, resourceful, self-accepting, effective",
             detail: {
-                low: "You can sometimes feel directionless or reactive to circumstances, occasionally struggling with self-acceptance or setting goals.",
-                high: "You are highly purposeful, self-accepting, and resourceful, capable of adapting effectively to achieve your personal goals.",
-                balanced: "You generally feel responsible for your path, though you may occasionally let external circumstances guide your direction."
+                low: "Low Self-Directedness is a core clinical marker for personality pathology and overall emotional fragility. It represents an external locus of control, where the ego struggles with integration. Individuals present as highly reactive, possessing a fragmented sense of identity, poor impulse control, and an inability to accept self-flaws. They frequently externalize blame, feel victimized by life, and demonstrate a profound deficit in setting and pursuing long-term autonomous goals.",
+                high: "High Self-Directedness is a prime indicator of robust psychological maturity and ego-syntonic integration. Clinically, it reflects a strong internal locus of control. These individuals exhibit exceptional executive functioning, taking conscious responsibility for their behavior, effectively regulating negative emotions, and possessing a highly coherent and self-accepting self-concept unthreatened by temporary failures.",
+                balanced: "A balanced score in Self-Directedness suggests generally adequate coping mechanisms and a functional ego presence. While the individual is largely responsible and goal-oriented, acute stressors may occasionally cause temporary regression into defensive externalizing or transient disruptions in self-esteem."
             }
         },
         ko: { 
             low: "목표가 불분명하고, 반응적이며, 자기 수용이 낮은 편", 
             high: "목적의식이 뚜렷하고, 책임감 있으며, 자기 수용이 높은 편",
             detail: {
-                low: "가끔 방향을 잃거나 주변 상황에 반응적으로 행동하며, 목표 설정이나 자기 수용에 어려움을 겪기도 합니다.",
-                high: "목적의식이 뚜렷하고 자기 자신을 잘 수용하며, 개인적인 목표를 달성하기 위해 자원을 효과적으로 활용합니다.",
-                balanced: "주로 자신의 삶에 책임감을 가지고 나아가지만, 때로는 외부 상황에 흐름을 맡기기도 합니다."
+                low: "자율성(Self-Directedness)이 낮은 것은 임상적으로 성격적 취약성과 자아 통합의 어려움을 시사하는 핵심 지표입니다. 개인은 자신의 삶에 대한 통제 소재를 외부에 두고, 파편화된 자아 정체성과 충동 조절의 어려움을 자주 겪습니다. 자신의 실수를 쉽게 인정하지 못하고 환경을 탓하며, 주도적인 장기 목표 설정이나 성취에 심각한 결함을 보일 수 있습니다.",
+                high: "높은 자율성은 매우 건강한 심리적 성숙도와 강력한 자아 통합을 나타냅니다. 임상적으로 강한 내적 통제감을 가지며, 뛰어난 실행 기능을 바탕으로 자신의 행동과 선택에 완전히 책임을 집니다. 건강한 자기 수용 능력이 있어 일시적인 실패에 자아 개념이 위협받지 않으며, 부정적 감정을 능숙하게 조절하는 높은 회복탄력성을 보입니다.",
+                balanced: "균형 잡힌 자율성은 전반적으로 정상적인 자아 기능과 대처 기제를 가지고 있음을 시사합니다. 대체로 통제감이 있고 목표 지향적으로 행동하나, 심각한 스트레스 상황에서는 때때로 외부 방어 기제를 사용하거나 일시적인 자존감의 변동을 경험할 수 있습니다."
             }
         },
     },
@@ -159,18 +159,18 @@ const INTERP = {
             low: "Intolerant, critical, revengeful, manipulative, self-centered", 
             high: "Empathic, tolerant, compassionate, principled, helpful",
             detail: {
-                low: "You may lean towards being self-directed rather than communal, sometimes arriving at critical views of others' behaviors.",
-                high: "You are empathic, highly tolerant, and compassionate. You genuinely enjoy cooperating and being helpful to principled causes.",
-                balanced: "You are capable of being supportive and empathic, but you also enforce healthy boundaries and protect your own interests."
+                low: "Clinically, significantly low Cooperativeness is often linked with antagonistic, narcissistic, or antisocial personality traits. The individual demonstrates severe deficits in cognitive and affective empathy, viewing interpersonal relationships as transactional or competitive. They tend to be highly intolerant, manipulative, and defensive, largely unable to engage in pro-social behavior without clear secondary gain. Trust in others is generally replaced by hyper-vigilant cynicism.",
+                high: "High Cooperativeness signifies mature social integration and profound pro-social emotional schemas. The individual displays deep affective empathy, a robust capacity for forgiveness, and operates from principled ethical frameworks. Clinically, this acts as a powerful buffer against interpersonal distress. However, if paired with pathologically high Reward Dependence, hyper-cooperativeness can lead to severe boundary deficits and self-sacrificing behaviors that undermine the individual's own welfare.",
+                balanced: "A balanced Cooperativeness score demonstrates a healthy psychosocial equilibrium. The individual is capable of genuine empathy and targeted pro-social action, yet maintains clinically secure personal boundaries, avoiding the extremes of cynical hostility and chronic self-effacement."
             }
         },
         ko: { 
             low: "비판적이고, 이기적이며, 타인에 대한 관용이 적은 편", 
             high: "공감적이고, 관대하며, 원칙적으로 타인을 돕는 편",
             detail: {
-                low: "공동체적인 마인드보다는 자신만의 기준을 중시하며, 때로는 타인의 행동에 대해 비판적인 시각을 가질 수 있습니다.",
-                high: "공감 능력이 뛰어나고 매우 관대하며, 원칙에 입각하여 기꺼이 타인을 돕는 이타적인 성향을 지닙니다.",
-                balanced: "타인을 돕고 공감할 수 있으면서도 건강한 경계를 설정하며 나의 이익 또한 적절히 보호합니다."
+                low: "임상적으로 연대감(Cooperativeness)이 현저히 낮을 경우 적대적, 나르시시즘적, 또는 반사회적 성격 특성과 연관될 수 있습니다. 대인관계에서 인지적/정서적 공감 능력이 심각하게 결여되어 있으며, 인간관계를 거래적이고 경쟁적으로 인식합니다. 매우 비판적이고 방어적이며, 분명한 개인적 이득이 없는 한 친사회적 협력을 끌어내기 어렵습니다.",
+                high: "높은 연대감은 성숙한 사회적 통합과 긍정적인 친사회적 자아 도식을 의미합니다. 깊은 공감 능력과 타인에 대한 놀라운 포용력을 가지며, 확고한 윤리적 원칙에 따라 이타적으로 행동합니다. 임상적으로 이는 대인관계 갈등에 대한 강력한 심리적 완충제 역할을 하나, 경계 설정에 실패할 경우 과도한 자기희생으로 인해 개인의 행복이 손상될 우려도 존재합니다.",
+                balanced: "균형 잡힌 연대감은 매우 건강한 심리사회적 평형 상태를 뜻합니다. 타인에게 진정으로 공감하고 사회적 협력을 이끌어 낼 수 있으면서도, 임상적으로 안전한 개인의 경계를 유지하며 이기적이거나 지나치게 희생적인 극단으로 치우치지 않습니다."
             }
         },
     },
@@ -179,18 +179,18 @@ const INTERP = {
             low: "Materialistic, possessive, practical, objective", 
             high: "Spiritual, idealistic, self-forgetful, transpersonal, connected",
             detail: {
-                low: "You are practical, objective, and rooted firmly in tangible reality rather than esoteric or highly spiritual concepts.",
-                high: "You possess a strong idealistic and spiritual core, frequently feeling deeply connected to the broader universe or humanity.",
-                balanced: "You recognize a sense of broader connection or spirituality without losing your grounding in everyday reality."
+                low: "Clinically low Self-Transcendence indicates a hyper-rational, distinctly materialistic, and concrete cognitive framework. The psyche operates exclusively within empirical bounds. While protecting against psychosis or magical thinking, this extreme objectivity often results in existential sterility, an inability to process loss or mortality effectively, and a reduced capacity for experiences of awe or expanded consciousness.",
+                high: "High Self-Transcendence is fundamentally associated with a deep spiritual orientation and a transpersonal cognitive paradigm, where the individual feels intricately bound to the cosmos or humanity at large. This promotes profound existential contentment, self-forgetfulness, and the capacity to endure suffering with philosophical grace. However, extreme pathological levels may correlate with schizotypal traits, dissociative tendencies, clinical magical thinking, and a profound detachment from necessary grounded realities.",
+                balanced: "A balanced Self-Transcendence score represents optimal existential integration. The individual respects concrete, materialistic realities and logic, but retains the psychological elasticity to experience awe, engage in spiritual inquiry, and find systemic meaning in life events beyond the purely empirical."
             }
         },
         ko: { 
             low: "현실적이고, 객관적이며, 물질적인 편", 
             high: "영적이고, 이상주의적이며, 초월적 연결감이 강한 편",
             detail: {
-                low: "지나치게 관념적이거나 영적인 개념보다는 구체적이고 경험 가능한 현실에 단단히 뿌리를 두고 있습니다.",
-                high: "강한 이상주의적, 영적 가치관을 지니며 종종 인류 전체나 더 큰 우주와 깊이 연결되어 있다고 느낍니다.",
-                balanced: "더 넓은 세계와의 연결감이나 영적인 가치를 인정하면서도, 일상적인 현실감각을 잃지 않습니다."
+                low: "임상적으로 자기초월(Self-Transcendence)이 심각하게 낮은 개인은 초현실주의를 완전 배제하며, 지나치게 인지적이고 극도로 물질적인(가시적인) 방어 체계를 가집니다. 심리 시스템이 철저히 경험주의적 경계선 내에서만 작동하므로 망상으로부터는 안전하나, 실존적 공허함에 취약하며 상실이나 죽음과 같은 실존적 스트레스를 처리하는 데 큰 어려움을 겪을 수 있습니다.",
+                high: "높은 자기초월은 자아의 경계를 우주나 인류 전체와 같은 넓은 차원으로 확장시키는 초격리적 인지 방식을 뜻합니다. 높은 실존적 만족감과 이타적 헌신, 그리고 고난을 철학적으로 견뎌내는 성숙한 수용력을 제공합니다. 그러나 이 수치가 병리적으로 극단적일 경우 현실 도피, 기묘한 사고(Magical Thinking), 해리 증상 및 분열형 성격 특성 등 현실 감각의 심각한 결여를 동반할 수 있습니다.",
+                balanced: "균형 잡힌 자기초월 점수는 최적의 실존적 통합 상태를 보여줍니다. 지극히 현실적이고 논리적인 사고방식을 존중하고 이에 기반하여 살아가면서도, 삶의 철학적 의미를 성찰하고 경이로움을 경험하는 데 필요한 심리적 융통성을 유지합니다."
             }
         },
     },
