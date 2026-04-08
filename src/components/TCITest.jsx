@@ -55,32 +55,144 @@ const DIMS = {
 
 const INTERP = {
     NS: {
-        en: { low: "Reflective, deliberate, stoic, frugal, orderly", high: "Exploratory, impulsive, extravagant, quick-tempered, excitable" },
-        ko: { low: "신중하고, 절제하며, 질서를 중시하는 편", high: "탐색적이고, 충동적이며, 쉽게 흥분하는 편" },
+        en: { 
+            low: "Reflective, deliberate, stoic, frugal, orderly", 
+            high: "Exploratory, impulsive, extravagant, quick-tempered, excitable",
+            detail: {
+                low: "You tend to be thoughtful, strictly organized, and prefer established routines over unproven thrills.",
+                high: "You are driven by a need for exploring new things, enjoying excitement, risks, and acting spontaneously.",
+                balanced: "You navigate comfortably between seeking out novelty and sticking strictly to routine."
+            }
+        },
+        ko: { 
+            low: "신중하고, 절제하며, 질서를 중시하는 편", 
+            high: "탐색적이고, 충동적이며, 쉽게 흥분하는 편",
+            detail: {
+                low: "사려 깊고 체계적이며, 입증되지 않은 스릴보다는 확립된 일상을 선호합니다.",
+                high: "새로운 것을 탐색하려는 욕구가 강하며, 짜릿함과 위험을 즐기고 즉흥적으로 행동하는 경향이 있습니다.",
+                balanced: "새로움을 탐구하는 것과 일상적인 규칙을 지키는 것 사이에서 적절하게 균형을 유지합니다."
+            }
+        },
     },
     HA: {
-        en: { low: "Optimistic, bold, confident, outgoing, energetic", high: "Cautious, tense, fearful, inhibited, easily fatigued" },
-        ko: { low: "낙관적이고, 대담하며, 에너지가 넘치는 편", high: "조심스럽고, 긴장이 많으며, 쉽게 지치는 편" },
+        en: { 
+            low: "Optimistic, bold, confident, outgoing, energetic", 
+            high: "Cautious, tense, fearful, inhibited, easily fatigued",
+            detail: {
+                low: "You are highly optimistic and bold, remaining deeply confident and energetic even in unfamiliar situations.",
+                high: "You tend to be cautious and anticipate potential problems, often feeling tense or worried about the future.",
+                balanced: "You are mindful of potential risks without being overly fearful, maintaining a healthy sense of caution."
+            }
+        },
+        ko: { 
+            low: "낙관적이고, 대담하며, 에너지가 넘치는 편", 
+            high: "조심스럽고, 긴장이 많으며, 쉽게 지치는 편",
+            detail: {
+                low: "매우 낙관적이고 대담하며, 낯선 상황에서도 깊은 자신감과 에너지를 유지합니다.",
+                high: "조심성이 많고 잠재적인 문제를 미리 예상하며, 미래에 대해 긴장하거나 걱정하는 경향이 있습니다.",
+                balanced: "지나치게 두려워하지 않으면서도 잠재적인 위험을 잘 인지하며, 건강한 경계심을 유지합니다."
+            }
+        },
     },
     RD: {
-        en: { low: "Independent, detached, cool, practical, self-contained", high: "Sentimental, warm, attached, dependent, open" },
-        ko: { low: "독립적이고, 냉정하며, 실용적인 편", high: "정이 많고, 따뜻하며, 타인에게 의존하는 편" },
+        en: { 
+            low: "Independent, detached, cool, practical, self-contained", 
+            high: "Sentimental, warm, attached, dependent, open",
+            detail: {
+                low: "You are independent and practical, preferring to remain slightly detached rather than rely heavily on social approval.",
+                high: "You are highly sentimental and warm, valuing deep attachments and thriving on social connection and approval.",
+                balanced: "You enjoy connecting with others but maintain your independent streak when making your own decisions."
+            }
+        },
+        ko: { 
+            low: "독립적이고, 냉정하며, 실용적인 편", 
+            high: "정이 많고, 따뜻하며, 타인에게 의존하는 편",
+            detail: {
+                low: "독립적이고 실용적이며, 타인의 인정에 크게 의존하기보다는 약간의 거리를 두는 것을 선호합니다.",
+                high: "매우 감성적이고 따뜻하며, 깊은 애착 관계를 소중히 여기고 사회적 유대감에서 큰 에너지를 얻습니다.",
+                balanced: "다른 사람들과 어울리는 것을 즐기면서도 스스로 결정을 내릴 때는 독립적인 태도를 유지합니다."
+            }
+        },
     },
     PS: {
-        en: { low: "Pragmatic, yielding, flexible, gives up easily", high: "Determined, ambitious, overachieving, perseverant" },
-        ko: { low: "유연하고 쉽게 포기하는 편", high: "결단력 있고, 야심차며, 끈기 있는 편" },
+        en: { 
+            low: "Pragmatic, yielding, flexible, gives up easily", 
+            high: "Determined, ambitious, overachieving, perseverant",
+            detail: {
+                low: "You are pragmatic and flexible, preferring to adjust your plans rather than push through heavy resistance.",
+                high: "You are exceptionally determined and ambitious, continually striving to overachieve even when faced with obstacles.",
+                balanced: "You know when it's best to persevere through a challenge and when it's smarter to step back and be flexible."
+            }
+        },
+        ko: { 
+            low: "유연하고 쉽게 포기하는 편", 
+            high: "결단력 있고, 야심차며, 끈기 있는 편",
+            detail: {
+                low: "실용적이고 유연하여, 강한 저항을 무릅쓰기보다는 계획을 수정하는 것을 더 선호합니다.",
+                high: "매우 결단력 있고 야심이 넘치며, 장애물에 부딪혀도 목표를 달성하기 위해 끊임없이 노력합니다.",
+                balanced: "어려움을 극복하며 인내해야 할 때와 유연하게 한 발 물러서야 할 때를 잘 구분합니다."
+            }
+        },
     },
     SD: {
-        en: { low: "Blaming, aimless, reactive, fragile, unreliable", high: "Purposeful, responsible, resourceful, self-accepting, effective" },
-        ko: { low: "목표가 불분명하고, 반응적이며, 자기 수용이 낮은 편", high: "목적의식이 뚜렷하고, 책임감 있으며, 자기 수용이 높은 편" },
+        en: { 
+            low: "Blaming, aimless, reactive, fragile, unreliable", 
+            high: "Purposeful, responsible, resourceful, self-accepting, effective",
+            detail: {
+                low: "You can sometimes feel directionless or reactive to circumstances, occasionally struggling with self-acceptance or setting goals.",
+                high: "You are highly purposeful, self-accepting, and resourceful, capable of adapting effectively to achieve your personal goals.",
+                balanced: "You generally feel responsible for your path, though you may occasionally let external circumstances guide your direction."
+            }
+        },
+        ko: { 
+            low: "목표가 불분명하고, 반응적이며, 자기 수용이 낮은 편", 
+            high: "목적의식이 뚜렷하고, 책임감 있으며, 자기 수용이 높은 편",
+            detail: {
+                low: "가끔 방향을 잃거나 주변 상황에 반응적으로 행동하며, 목표 설정이나 자기 수용에 어려움을 겪기도 합니다.",
+                high: "목적의식이 뚜렷하고 자기 자신을 잘 수용하며, 개인적인 목표를 달성하기 위해 자원을 효과적으로 활용합니다.",
+                balanced: "주로 자신의 삶에 책임감을 가지고 나아가지만, 때로는 외부 상황에 흐름을 맡기기도 합니다."
+            }
+        },
     },
     CO: {
-        en: { low: "Intolerant, critical, revengeful, manipulative, self-centered", high: "Empathic, tolerant, compassionate, principled, helpful" },
-        ko: { low: "비판적이고, 이기적이며, 타인에 대한 관용이 적은 편", high: "공감적이고, 관대하며, 원칙적으로 타인을 돕는 편" },
+        en: { 
+            low: "Intolerant, critical, revengeful, manipulative, self-centered", 
+            high: "Empathic, tolerant, compassionate, principled, helpful",
+            detail: {
+                low: "You may lean towards being self-directed rather than communal, sometimes arriving at critical views of others' behaviors.",
+                high: "You are empathic, highly tolerant, and compassionate. You genuinely enjoy cooperating and being helpful to principled causes.",
+                balanced: "You are capable of being supportive and empathic, but you also enforce healthy boundaries and protect your own interests."
+            }
+        },
+        ko: { 
+            low: "비판적이고, 이기적이며, 타인에 대한 관용이 적은 편", 
+            high: "공감적이고, 관대하며, 원칙적으로 타인을 돕는 편",
+            detail: {
+                low: "공동체적인 마인드보다는 자신만의 기준을 중시하며, 때로는 타인의 행동에 대해 비판적인 시각을 가질 수 있습니다.",
+                high: "공감 능력이 뛰어나고 매우 관대하며, 원칙에 입각하여 기꺼이 타인을 돕는 이타적인 성향을 지닙니다.",
+                balanced: "타인을 돕고 공감할 수 있으면서도 건강한 경계를 설정하며 나의 이익 또한 적절히 보호합니다."
+            }
+        },
     },
     ST: {
-        en: { low: "Materialistic, possessive, practical, objective", high: "Spiritual, idealistic, self-forgetful, transpersonal, connected" },
-        ko: { low: "현실적이고, 객관적이며, 물질적인 편", high: "영적이고, 이상주의적이며, 초월적 연결감이 강한 편" },
+        en: { 
+            low: "Materialistic, possessive, practical, objective", 
+            high: "Spiritual, idealistic, self-forgetful, transpersonal, connected",
+            detail: {
+                low: "You are practical, objective, and rooted firmly in tangible reality rather than esoteric or highly spiritual concepts.",
+                high: "You possess a strong idealistic and spiritual core, frequently feeling deeply connected to the broader universe or humanity.",
+                balanced: "You recognize a sense of broader connection or spirituality without losing your grounding in everyday reality."
+            }
+        },
+        ko: { 
+            low: "현실적이고, 객관적이며, 물질적인 편", 
+            high: "영적이고, 이상주의적이며, 초월적 연결감이 강한 편",
+            detail: {
+                low: "지나치게 관념적이거나 영적인 개념보다는 구체적이고 경험 가능한 현실에 단단히 뿌리를 두고 있습니다.",
+                high: "강한 이상주의적, 영적 가치관을 지니며 종종 인류 전체나 더 큰 우주와 깊이 연결되어 있다고 느낍니다.",
+                balanced: "더 넓은 세계와의 연결감이나 영적인 가치를 인정하면서도, 일상적인 현실감각을 잃지 않습니다."
+            }
+        },
     },
 };
 
@@ -152,21 +264,36 @@ const QS = [
 ];
 
 function ScoreBar({ dim, pct, lang }) {
+    const [expanded, setExpanded] = useState(false);
     const d = DIMS[dim];
     const interp = INTERP[dim][lang];
     const t = T[lang];
+    const detailedText = pct < 40 ? interp.detail.low : pct > 60 ? interp.detail.high : interp.detail.balanced;
+    const shortText = pct < 40 ? interp.low : pct > 60 ? interp.high : t.balanced;
+    
     return (
-        <div style={{ marginBottom: 18 }}>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
-                <span style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontSize: 15, color: "#1a1a2e" }}>{d[lang]}</span>
+        <div style={{ marginBottom: 18, marginTop: 4, padding: "10px", borderRadius: "10px", background: expanded ? "#f9f8f6" : "transparent", transition: "background 0.2s" }} onClick={() => setExpanded(!expanded)}>
+            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4, cursor: "pointer" }}>
+                <span style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontSize: 15, color: "#1a1a2e", display: "flex", alignItems: "center", gap: 6 }}>
+                    {d[lang]}
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}>
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </span>
                 <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: d.color, fontWeight: 700 }}>{Math.round(pct)}%</span>
             </div>
-            <div style={{ height: 10, background: "#e8e6e1", borderRadius: 5, overflow: "hidden" }}>
+            <div style={{ height: 10, background: "#e8e6e1", borderRadius: 5, overflow: "hidden", cursor: "pointer" }}>
                 <div style={{ width: `${pct}%`, height: "100%", background: `linear-gradient(90deg, ${d.color}cc, ${d.color})`, borderRadius: 5, transition: "width 1s cubic-bezier(.22,1,.36,1)" }} />
             </div>
-            <div style={{ fontSize: 11, color: "#666", marginTop: 4, fontStyle: "italic" }}>
-                {pct < 40 ? interp.low : pct > 60 ? interp.high : t.balanced}
+            <div style={{ fontSize: 11, color: "#666", marginTop: 6, fontStyle: "italic" }}>
+                {shortText} 
+                <span style={{ marginLeft: 4, fontSize: 10, color: "#aaa", textDecoration: "underline", cursor: "pointer" }}>{expanded ? (lang === "ko" ? "접기" : "Hide") : (lang === "ko" ? "자세히 보기" : "Details")}</span>
             </div>
+            {expanded && (
+                <div style={{ marginTop: 10, fontSize: 12, color: "#444", lineHeight: 1.5, background: "#fff", padding: "12px 14px", borderRadius: 8, border: "1px solid #eaeaea", fontStyle: "normal" }} onClick={(e) => e.stopPropagation()}>
+                    {detailedText}
+                </div>
+            )}
         </div>
     );
 }
