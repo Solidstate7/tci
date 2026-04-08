@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const T = {
     en: {
@@ -304,6 +304,7 @@ export default function TCITest() {
     const [answers, setAnswers] = useState({});
     const [done, setDone] = useState(false);
     const [fadeIn, setFadeIn] = useState(true);
+    const lock = useRef(false);
 
     const t = T[lang];
     const total = QS.length;
@@ -313,13 +314,22 @@ export default function TCITest() {
         { label: t.n, value: 3 }, { label: t.a, value: 4 }, { label: t.sa, value: 5 },
     ];
 
-    function answer(val) {
+    function transition(action) {
+        if (lock.current) return;
+        lock.current = true;
         setFadeIn(false);
         setTimeout(() => {
+            action();
+            setFadeIn(true);
+            lock.current = false;
+        }, 200);
+    }
+
+    function answer(val) {
+        transition(() => {
             setAnswers(a => ({ ...a, [current]: val }));
             if (current < total - 1) setCurrent(c => c + 1);
-            setFadeIn(true);
-        }, 200);
+        });
     }
 
     function computeScores() {
@@ -411,7 +421,7 @@ export default function TCITest() {
 
                     <div style={{ display: "flex", justifyContent: "space-between", marginTop: 16 }}>
                         <button
-                            onClick={() => { if (current > 0) { setFadeIn(false); setTimeout(() => { setCurrent(c => c - 1); setFadeIn(true); }, 200); } }}
+                            onClick={() => { if (current > 0) transition(() => setCurrent(c => c - 1)); }}
                             disabled={current === 0}
                             style={{
                                 padding: "8px 20px", borderRadius: 8, border: "1px solid #ccc", background: "#fff",
@@ -426,7 +436,7 @@ export default function TCITest() {
                             }}>{t.results}</button>
                         )}
                         {!allAnswered && current < total - 1 && answers[current] !== undefined && (
-                            <button onClick={() => { setFadeIn(false); setTimeout(() => { setCurrent(c => c + 1); setFadeIn(true); }, 200); }}
+                            <button onClick={() => transition(() => setCurrent(c => c + 1))}
                                 style={{ padding: "8px 20px", borderRadius: 8, border: "1px solid #ccc", background: "#fff", cursor: "pointer", fontSize: 13, color: "#555" }}
                             >{t.skip}</button>
                         )}
