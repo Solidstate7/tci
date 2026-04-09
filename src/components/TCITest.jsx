@@ -99,11 +99,11 @@ export default function TCITest() {
             <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
 
             <div style={{ maxWidth: 540, margin: "0 auto 12px", display: "flex", justifyContent: "flex-end" }}>
-                <button onClick={() => setLang(l => l === "en" ? "ko" : l === "ko" ? "tr" : "en")} style={{
+                <button onClick={() => setLang(l => l === "en" ? "ko" : l === "ko" ? "de" : "en")} style={{
                     padding: "5px 14px", borderRadius: 20, border: "1px solid #ccc", background: "#fffefa",
                     cursor: "pointer", fontSize: 12, fontWeight: 600, color: "#666", letterSpacing: 0.5
                 }}>
-                    {lang === "en" ? "한국어" : lang === "ko" ? "Türkçe" : "English"}
+                    {lang === "en" ? "한국어" : lang === "ko" ? "Deutsch" : "English"}
                 </button>
             </div>
 
