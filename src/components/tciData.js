@@ -1,12 +1,12 @@
 export const T = {
     en: {
-        title: "Temperament & Character", subtitle: "Cloninger's TCI Assessment", qOf: (c, t) => `Question ${c} of ${t}`, complete: (p) => `${p}% complete`, back: "← Back", skip: "Skip →", results: "See Results →", retake: "Retake Test", yourProfile: "Your TCI Profile", profileSub: "Temperament & Character", yourArchetype: "Your Archetype", temperament: "Temperament", tempDesc: "Heritable biases in automatic emotional responses", character: "Character", charDesc: "Developed through insight and learning over the lifespan", note: "Note:", noteText: "This is an informal self-assessment inspired by Cloninger's TCI model for educational purposes only. It is not a validated clinical instrument.", balanced: "Balanced between extremes", sd: "Strongly Disagree", d: "Disagree", n: "Neutral", a: "Agree", sa: "Strongly Agree",
+        title: "Temperament & Character", subtitle: "Cloninger's TCI Assessment", qOf: (c, t) => `Question ${c} of ${t}`, complete: (p) => `${p}% complete`, back: "← Back", skip: "Skip →", results: "See Results →", retake: "Retake Test", yourProfile: "Your TCI Profile", profileSub: "Temperament & Character", yourArchetype: "Your Archetype", temperament: "Temperament", tempDesc: "Heritable biases in automatic emotional responses", character: "Character", charDesc: "Developed through insight and learning over the lifespan", note: "Note:", noteText: "This is an informal self-assessment inspired by Cloninger's TCI model for educational purposes only. It is not a validated clinical instrument. Standardized scores (T-scores and percentiles) are derived from approximate reference norms rather than a validated normative sample, and must not be used for diagnosis.", balanced: "Within the average range", sd: "Strongly Disagree", d: "Disagree", n: "Neutral", a: "Agree", sa: "Strongly Agree", reportTitle: "Personality Assessment Report", basedOn: "Based on Cloninger's psychobiological model of temperament and character", summaryTitle: "Profile Summary", thDimension: "Dimension", thScore: "T", thPercentile: "%ile", thRange: "Range", validityTitle: "Response Validity", itemsDone: (n, tot) => `${n} of ${tot} items completed`, validValid: "Valid — adequate response variability", validFlag: "Interpret with caution — low response variability (possible invariant responding)", tScoreLabel: "T-score", percentileLabel: "percentile", rangeLabel: "Range", assessmentDate: "Assessment date", avgBandLegend: "Shaded band = average range (T 45–55)", interpHeading: "Clinical interpretation", details: "Details", hide: "Hide",
     },
     ko: {
-        title: "기질 및 성격 검사", subtitle: "클로닝거 TCI 자가평가", qOf: (c, t) => `${t}문항 중 ${c}번`, complete: (p) => `${p}% 완료`, back: "← 이전", skip: "건너뛰기 →", results: "결과 보기 →", retake: "다시 검사하기", yourProfile: "나의 TCI 프로필", profileSub: "기질 및 성격 검사 결과", yourArchetype: "당신의 아키타입 (원형)", temperament: "기질 (Temperament)", tempDesc: "자동적 정서 반응에 대한 유전적 경향성", character: "성격 (Character)", charDesc: "통찰과 학습을 통해 발달하는 자기개념", note: "참고:", noteText: "본 검사는 클로닝거의 TCI 모델에 기반한 비공식 자기평가이며 교육 목적으로만 제공됩니다.", balanced: "양극단 사이의 균형 상태", sd: "매우 그렇지 않다", d: "그렇지 않다", n: "보통이다", a: "그렇다", sa: "매우 그렇다",
+        title: "기질 및 성격 검사", subtitle: "클로닝거 TCI 자가평가", qOf: (c, t) => `${t}문항 중 ${c}번`, complete: (p) => `${p}% 완료`, back: "← 이전", skip: "건너뛰기 →", results: "결과 보기 →", retake: "다시 검사하기", yourProfile: "나의 TCI 프로필", profileSub: "기질 및 성격 검사 결과", yourArchetype: "당신의 아키타입 (원형)", temperament: "기질 (Temperament)", tempDesc: "자동적 정서 반응에 대한 유전적 경향성", character: "성격 (Character)", charDesc: "통찰과 학습을 통해 발달하는 자기개념", note: "참고:", noteText: "본 검사는 클로닝거의 TCI 모델에 기반한 비공식 자기평가이며 교육 목적으로만 제공됩니다. 표준점수(T 점수·백분위)는 검증된 규준 표본이 아닌 근사 참조값에 기반하며 진단 목적으로 사용할 수 없습니다.", balanced: "평균 범위에 해당", sd: "매우 그렇지 않다", d: "그렇지 않다", n: "보통이다", a: "그렇다", sa: "매우 그렇다", reportTitle: "성격 평가 보고서", basedOn: "클로닝거의 기질 및 성격에 관한 심리생물학적 모델 기반", summaryTitle: "프로필 요약", thDimension: "척도", thScore: "T", thPercentile: "백분위", thRange: "범위", validityTitle: "응답 타당도", itemsDone: (n, tot) => `${tot}문항 중 ${n}문항 완료`, validValid: "타당 — 응답 변산성 적절", validFlag: "해석에 주의 — 응답 변산성이 낮음 (일률적 응답 가능성)", tScoreLabel: "T 점수", percentileLabel: "백분위", rangeLabel: "범위", assessmentDate: "검사일", avgBandLegend: "음영 구간 = 평균 범위 (T 45–55)", interpHeading: "임상적 해석", details: "자세히 보기", hide: "접기",
     },
     de: {
-        title: "Temperament & Charakter", subtitle: "Cloningers TCI-Bewertung", qOf: (c, t) => `Frage ${c} von ${t}`, complete: (p) => `${p}% abgeschlossen`, back: "← Zurück", skip: "Überspringen →", results: "Ergebnisse ansehen →", retake: "Test wiederholen", yourProfile: "Ihr TCI-Profil", profileSub: "Temperament & Charakter", yourArchetype: "Dein Archetyp", temperament: "Temperament", tempDesc: "Vererbbare Tendenzen in automatischen emotionalen Reaktionen", character: "Charakter", charDesc: "Entwickelt durch Einsicht und Lernen im Laufe des Lebens", note: "Hinweis:", noteText: "Dies ist eine informelle Selbsteinschätzung, die zu Bildungszwecken vom TCI-Modell Cloningers inspiriert wurde. Es handelt sich nicht um ein validiertes klinisches Instrument.", balanced: "Ausgewogen zwischen den Extremen", sd: "Stimme gar nicht zu", d: "Stimme nicht zu", n: "Neutral", a: "Stimme zu", sa: "Stimme völlig zu",
+        title: "Temperament & Charakter", subtitle: "Cloningers TCI-Bewertung", qOf: (c, t) => `Frage ${c} von ${t}`, complete: (p) => `${p}% abgeschlossen`, back: "← Zurück", skip: "Überspringen →", results: "Ergebnisse ansehen →", retake: "Test wiederholen", yourProfile: "Ihr TCI-Profil", profileSub: "Temperament & Charakter", yourArchetype: "Dein Archetyp", temperament: "Temperament", tempDesc: "Vererbbare Tendenzen in automatischen emotionalen Reaktionen", character: "Charakter", charDesc: "Entwickelt durch Einsicht und Lernen im Laufe des Lebens", note: "Hinweis:", noteText: "Dies ist eine informelle Selbsteinschätzung, die zu Bildungszwecken vom TCI-Modell Cloningers inspiriert wurde. Es handelt sich nicht um ein validiertes klinisches Instrument. Die standardisierten Werte (T-Werte und Perzentile) beruhen auf näherungsweisen Referenznormen statt auf einer validierten Normstichprobe und dürfen nicht zur Diagnose verwendet werden.", balanced: "Im Durchschnittsbereich", sd: "Stimme gar nicht zu", d: "Stimme nicht zu", n: "Neutral", a: "Stimme zu", sa: "Stimme völlig zu", reportTitle: "Persönlichkeitsbericht", basedOn: "Basierend auf Cloningers psychobiologischem Modell von Temperament und Charakter", summaryTitle: "Profilübersicht", thDimension: "Dimension", thScore: "T", thPercentile: "Perz.", thRange: "Bereich", validityTitle: "Antwortvalidität", itemsDone: (n, tot) => `${n} von ${tot} Items beantwortet`, validValid: "Gültig — ausreichende Antwortvariabilität", validFlag: "Mit Vorsicht interpretieren — geringe Antwortvariabilität (mögliches invariantes Antworten)", tScoreLabel: "T-Wert", percentileLabel: "Perzentil", rangeLabel: "Bereich", assessmentDate: "Erhebungsdatum", avgBandLegend: "Schattiertes Band = Durchschnittsbereich (T 45–55)", interpHeading: "Klinische Interpretation", details: "Details", hide: "Ausblenden",
     }
 };
 
@@ -80,12 +80,12 @@ export const INTERP = {
             }
         },
         de: {
-            low: "Reflektierend, bedächtig, stoisch, sparsam, ordentlich",
-            high: "Forschend, impulsiv, extravagant, aufbrausend, erregbar",
+            low: "Optimistisch, mutig, selbstbewusst, kontaktfreudig, energiegeladen",
+            high: "Vorsichtig, angespannt, ängstlich, gehemmt, schnell ermüdet",
             detail: {
-                low: "Aus klinischer Sicht weisen Personen mit einem niedrigen Wert für Neugierverhalten in der Regel eine erhöhte dopaminerge Stabilität auf. Sie bevorzugen systematische, strukturierte und vorhersehbare Umgebungen und sind sehr resistent gegenüber impulsivem Handeln. Dies zeigt klinische Anzeichen für Starrheit oder mangelnde Spontanität auf.",
-                high: "Klinisch ist ein hohes Neugierverhalten mit einer geringeren basalen dopaminergen Aktivität verbunden, was zu häufigem Erkundungsverhalten führt, um Stimulation zu erreichen. Sie reagieren stark auf neue Umgebungen und handeln oft impulsiv. Solche Profile können auf Ablenkbarkeit oder Anfälligkeit für Süchte hinweisen.",
-                balanced: "Ein ausgewogener Wert zeigt eine optimale Modulation der dopaminergen Reaktionen. Das Individuum kann angemessen mit Neuheiten umgehen und bei Bedarf Verhaltenshemmung einsetzen, um Routinen aufrechtzuerhalten."
+                low: "Klinisch betrachtet weist eine niedrige Schadensvermeidung auf eine verringerte Empfindlichkeit des serotonergen Bestrafungssystems im Gehirn hin. Diese Personen zeigen ausgeprägten Mut, unerschütterlichen Optimismus und einen auffälligen Mangel an Erwartungsangst selbst in tatsächlich riskanten Situationen.",
+                high: "Eine hohe Schadensvermeidung ist durch ein überaktives Verhaltenshemmungssystem gekennzeichnet, das eng mit der serotonergen Funktion verknüpft ist. Die Person reagiert überempfindlich auf aversive Reize und neigt stark zu Erwartungsangst.",
+                balanced: "Ein ausgewogener Wert für Schadensvermeidung spiegelt ein gut reguliertes serotonerges System wider. Die Person zeigt eine angemessene Furchtkonditionierung – sie kann realistische negative Folgen vorhersehen und vorsichtig handeln, ohne dass Erwartungsangst ihre Entscheidungen lähmt oder ihre Energie raubt."
             }
         }
     },
@@ -109,12 +109,12 @@ export const INTERP = {
             }
         },
         de: {
-            low: "Reflektierend, bedächtig, stoisch, sparsam, ordentlich",
-            high: "Forschend, impulsiv, extravagant, aufbrausend, erregbar",
+            low: "Unabhängig, distanziert, kühl, praktisch, in sich ruhend",
+            high: "Sentimental, warmherzig, bindungsorientiert, abhängig, offen",
             detail: {
-                low: "Aus klinischer Sicht weisen Personen mit einem niedrigen Wert für Neugierverhalten in der Regel eine erhöhte dopaminerge Stabilität auf. Sie bevorzugen systematische, strukturierte und vorhersehbare Umgebungen und sind sehr resistent gegenüber impulsivem Handeln. Dies zeigt klinische Anzeichen für Starrheit oder mangelnde Spontanität auf.",
-                high: "Klinisch ist ein hohes Neugierverhalten mit einer geringeren basalen dopaminergen Aktivität verbunden, was zu häufigem Erkundungsverhalten führt, um Stimulation zu erreichen. Sie reagieren stark auf neue Umgebungen und handeln oft impulsiv. Solche Profile können auf Ablenkbarkeit oder Anfälligkeit für Süchte hinweisen.",
-                balanced: "Ein ausgewogener Wert zeigt eine optimale Modulation der dopaminergen Reaktionen. Das Individuum kann angemessen mit Neuheiten umgehen und bei Bedarf Verhaltenshemmung einsetzen, um Routinen aufrechtzuerhalten."
+                low: "Eine niedrige Belohnungsabhängigkeit spiegelt ein klinisches Profil ausgeprägter emotionaler Distanziertheit und Unabhängigkeit von sozialer Verstärkung wider, das im Allgemeinen mit Schwankungen der noradrenergen Grundaktivität verbunden ist.",
+                high: "Klinisch weist eine hohe Belohnungsabhängigkeit auf eine Überempfindlichkeit gegenüber sozialen Signalen und emotionaler Verstärkung hin. Diese Personen sind sehr bindungsorientiert, empathisch und besonders geschickt darin, andere zu deuten und auf sie einzugehen.",
+                balanced: "Ein ausgewogener Wert für Belohnungsabhängigkeit zeigt eine Person, die tiefe emotionale Bindungen schätzt und pflegt, dabei aber ihre funktionale Eigenständigkeit bewahrt."
             }
         }
     },
@@ -138,12 +138,12 @@ export const INTERP = {
             }
         },
         de: {
-            low: "Reflektierend, bedächtig, stoisch, sparsam, ordentlich",
-            high: "Forschend, impulsiv, extravagant, aufbrausend, erregbar",
+            low: "Pragmatisch, nachgiebig, flexibel, gibt leicht auf",
+            high: "Entschlossen, ehrgeizig, übereifrig, ausdauernd",
             detail: {
-                low: "Aus klinischer Sicht weisen Personen mit einem niedrigen Wert für Neugierverhalten in der Regel eine erhöhte dopaminerge Stabilität auf. Sie bevorzugen systematische, strukturierte und vorhersehbare Umgebungen und sind sehr resistent gegenüber impulsivem Handeln. Dies zeigt klinische Anzeichen für Starrheit oder mangelnde Spontanität auf.",
-                high: "Klinisch ist ein hohes Neugierverhalten mit einer geringeren basalen dopaminergen Aktivität verbunden, was zu häufigem Erkundungsverhalten führt, um Stimulation zu erreichen. Sie reagieren stark auf neue Umgebungen und handeln oft impulsiv. Solche Profile können auf Ablenkbarkeit oder Anfälligkeit für Süchte hinweisen.",
-                balanced: "Ein ausgewogener Wert zeigt eine optimale Modulation der dopaminergen Reaktionen. Das Individuum kann angemessen mit Neuheiten umgehen und bei Bedarf Verhaltenshemmung einsetzen, um Routinen aufrechtzuerhalten."
+                low: "Ein klinisch niedriger Beharrlichkeitswert deutet auf eine sehr niedrige Frustrationsschwelle hin. Solche Personen passen sich rasch an, indem sie Widerständen nachgeben, anstatt ihre Ressourcen zu erschöpfen.",
+                high: "Eine hohe Beharrlichkeit steht für robuste Widerstandsfähigkeit bei unregelmäßiger Belohnung. Die Person besitzt eine ausgeprägte Fähigkeit, anhaltende Anstrengung trotz Müdigkeit, Frustration oder ausbleibender unmittelbarer Belohnung aufrechtzuerhalten.",
+                balanced: "Ein optimal ausgewogener Beharrlichkeitswert zeigt die Fähigkeit, zielgerichtetes Verhalten aufrechtzuerhalten, wenn das Ergebnis den Aufwand rechtfertigt, verbunden mit der nötigen Einsicht, aussichtslose Vorhaben aufzugeben und sich flexibel an veränderte Umstände anzupassen."
             }
         }
     },
@@ -167,12 +167,12 @@ export const INTERP = {
             }
         },
         de: {
-            low: "Reflektierend, bedächtig, stoisch, sparsam, ordentlich",
-            high: "Forschend, impulsiv, extravagant, aufbrausend, erregbar",
+            low: "Vorwurfsvoll, ziellos, reaktiv, fragil, unzuverlässig",
+            high: "Zielstrebig, verantwortungsbewusst, einfallsreich, selbstakzeptierend, wirksam",
             detail: {
-                low: "Aus klinischer Sicht weisen Personen mit einem niedrigen Wert für Neugierverhalten in der Regel eine erhöhte dopaminerge Stabilität auf. Sie bevorzugen systematische, strukturierte und vorhersehbare Umgebungen und sind sehr resistent gegenüber impulsivem Handeln. Dies zeigt klinische Anzeichen für Starrheit oder mangelnde Spontanität auf.",
-                high: "Klinisch ist ein hohes Neugierverhalten mit einer geringeren basalen dopaminergen Aktivität verbunden, was zu häufigem Erkundungsverhalten führt, um Stimulation zu erreichen. Sie reagieren stark auf neue Umgebungen und handeln oft impulsiv. Solche Profile können auf Ablenkbarkeit oder Anfälligkeit für Süchte hinweisen.",
-                balanced: "Ein ausgewogener Wert zeigt eine optimale Modulation der dopaminergen Reaktionen. Das Individuum kann angemessen mit Neuheiten umgehen und bei Bedarf Verhaltenshemmung einsetzen, um Routinen aufrechtzuerhalten."
+                low: "Eine niedrige Selbstlenkungsfähigkeit ist ein zentraler klinischer Marker für Persönlichkeitspathologie und allgemeine emotionale Fragilität. Sie steht für einen externen Kontrollort, bei dem das Ich Schwierigkeiten mit der Integration hat.",
+                high: "Eine hohe Selbstlenkungsfähigkeit ist ein wesentlicher Indikator für robuste psychische Reife und ich-syntone Integration. Klinisch spiegelt sie einen starken inneren Kontrollort wider.",
+                balanced: "Ein ausgewogener Wert für Selbstlenkungsfähigkeit deutet auf insgesamt angemessene Bewältigungsmechanismen und eine funktionale Ich-Stärke hin."
             }
         }
     },
@@ -196,12 +196,12 @@ export const INTERP = {
             }
         },
         de: {
-            low: "Reflektierend, bedächtig, stoisch, sparsam, ordentlich",
-            high: "Forschend, impulsiv, extravagant, aufbrausend, erregbar",
+            low: "Intolerant, kritisch, rachsüchtig, manipulativ, egozentrisch",
+            high: "Empathisch, tolerant, mitfühlend, prinzipientreu, hilfsbereit",
             detail: {
-                low: "Aus klinischer Sicht weisen Personen mit einem niedrigen Wert für Neugierverhalten in der Regel eine erhöhte dopaminerge Stabilität auf. Sie bevorzugen systematische, strukturierte und vorhersehbare Umgebungen und sind sehr resistent gegenüber impulsivem Handeln. Dies zeigt klinische Anzeichen für Starrheit oder mangelnde Spontanität auf.",
-                high: "Klinisch ist ein hohes Neugierverhalten mit einer geringeren basalen dopaminergen Aktivität verbunden, was zu häufigem Erkundungsverhalten führt, um Stimulation zu erreichen. Sie reagieren stark auf neue Umgebungen und handeln oft impulsiv. Solche Profile können auf Ablenkbarkeit oder Anfälligkeit für Süchte hinweisen.",
-                balanced: "Ein ausgewogener Wert zeigt eine optimale Modulation der dopaminergen Reaktionen. Das Individuum kann angemessen mit Neuheiten umgehen und bei Bedarf Verhaltenshemmung einsetzen, um Routinen aufrechtzuerhalten."
+                low: "Klinisch wird eine deutlich niedrige Kooperationsbereitschaft häufig mit antagonistischen, narzisstischen oder antisozialen Persönlichkeitszügen in Verbindung gebracht.",
+                high: "Eine hohe Kooperationsbereitschaft steht für reife soziale Integration und ausgeprägte prosoziale emotionale Schemata.",
+                balanced: "Ein ausgewogener Wert für Kooperationsbereitschaft zeigt ein gesundes psychosoziales Gleichgewicht."
             }
         }
     },
@@ -225,12 +225,12 @@ export const INTERP = {
             }
         },
         de: {
-            low: "Reflektierend, bedächtig, stoisch, sparsam, ordentlich",
-            high: "Forschend, impulsiv, extravagant, aufbrausend, erregbar",
+            low: "Materialistisch, besitzergreifend, praktisch, objektiv",
+            high: "Spirituell, idealistisch, selbstvergessen, transpersonal, verbunden",
             detail: {
-                low: "Aus klinischer Sicht weisen Personen mit einem niedrigen Wert für Neugierverhalten in der Regel eine erhöhte dopaminerge Stabilität auf. Sie bevorzugen systematische, strukturierte und vorhersehbare Umgebungen und sind sehr resistent gegenüber impulsivem Handeln. Dies zeigt klinische Anzeichen für Starrheit oder mangelnde Spontanität auf.",
-                high: "Klinisch ist ein hohes Neugierverhalten mit einer geringeren basalen dopaminergen Aktivität verbunden, was zu häufigem Erkundungsverhalten führt, um Stimulation zu erreichen. Sie reagieren stark auf neue Umgebungen und handeln oft impulsiv. Solche Profile können auf Ablenkbarkeit oder Anfälligkeit für Süchte hinweisen.",
-                balanced: "Ein ausgewogener Wert zeigt eine optimale Modulation der dopaminergen Reaktionen. Das Individuum kann angemessen mit Neuheiten umgehen und bei Bedarf Verhaltenshemmung einsetzen, um Routinen aufrechtzuerhalten."
+                low: "Eine klinisch niedrige Selbsttranszendenz weist auf ein hyperrationales, ausgeprägt materialistisches und konkretes kognitives Bezugssystem hin.",
+                high: "Eine hohe Selbsttranszendenz ist grundlegend mit einer tiefen spirituellen Orientierung und einem transpersonalen kognitiven Paradigma verbunden.",
+                balanced: "Ein ausgewogener Wert für Selbsttranszendenz steht für eine optimale existenzielle Integration."
             }
         }
     },
@@ -302,3 +302,47 @@ export const QS = [
     { en: "I think things usually work out for the best no matter what happens.", ko: "무슨 일이 일어나도 결국은 최선의 결과가 나온다고 생각한다.", de: "Ich denke, dass am Ende meistens alles zum Besten führt, egal was passiert.", dim: "SD", rev: false },
     { en: "I often find it hard to change my way of doing things even when a different approach would be better.", ko: "다른 접근 방식이 더 나을 때에도 내 방식을 바꾸기 어려울 때가 많다.", de: "Es fällt mir oft schwer, meine Vorgehensweise zu ändern, selbst wenn ein anderer Ansatz besser wäre.", dim: "PS", rev: false }
 ];
+
+// Approximate reference norms per dimension, expressed as the expected mean
+// item response on the 1–5 Likert scale (mu) and its standard deviation (sd).
+// These are reasonable approximations drawn from the TCI literature, NOT a
+// validated normative sample. They exist to convert raw scores into
+// standardized T-scores and percentiles the way a clinical report would.
+export const NORMS = {
+    NS: { mu: 3.00, sd: 0.62 },
+    HA: { mu: 2.80, sd: 0.70 },
+    RD: { mu: 3.40, sd: 0.58 },
+    PS: { mu: 3.30, sd: 0.60 },
+    SD: { mu: 3.55, sd: 0.58 },
+    CO: { mu: 3.70, sd: 0.55 },
+    ST: { mu: 2.95, sd: 0.68 },
+};
+
+// Five clinical interpretation bands, each one standard deviation wide and
+// centered on the population mean (T = 50). Index 0 = lowest, 4 = highest.
+export const TIERS = [
+    { en: "Very Low", ko: "매우 낮음", de: "Sehr niedrig" },
+    { en: "Low", ko: "낮음", de: "Niedrig" },
+    { en: "Average", ko: "평균", de: "Durchschnittlich" },
+    { en: "High", ko: "높음", de: "Hoch" },
+    { en: "Very High", ko: "매우 높음", de: "Sehr hoch" },
+];
+
+// Standard normal CDF — Zelen & Severo (1964) approximation. Returns P(Z <= z).
+export function normCdf(z) {
+    const b1 = 0.319381530, b2 = -0.356563782, b3 = 1.781477937, b4 = -1.821255978, b5 = 1.330274429, p = 0.2316419, c = 0.39894228;
+    const az = Math.abs(z);
+    const tt = 1 / (1 + p * az);
+    const poly = tt * (b1 + tt * (b2 + tt * (b3 + tt * (b4 + tt * b5))));
+    const tail = c * Math.exp(-az * az / 2) * poly;
+    return z >= 0 ? 1 - tail : tail;
+}
+
+// Map a z-score to one of the five clinical bands (cut points at ±0.5, ±1.5 SD).
+export function tierIndex(z) {
+    if (z < -1.5) return 0;
+    if (z < -0.5) return 1;
+    if (z < 0.5) return 2;
+    if (z < 1.5) return 3;
+    return 4;
+}
